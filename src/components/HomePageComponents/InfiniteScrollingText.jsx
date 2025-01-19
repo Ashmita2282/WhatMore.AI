@@ -41,7 +41,7 @@ const InfiniteScrollingText = () => {
         ))}
       </div>
 
-      <style jsx>{`
+      <style>{`
         .animate-scroll {
           animation: scroll 30s linear infinite;
         }

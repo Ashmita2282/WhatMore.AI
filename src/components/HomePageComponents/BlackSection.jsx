@@ -2,38 +2,44 @@ import React from "react";
 
 const BlackSection = () => {
   return (
-    <section className="bg-black text-white min-h-screen flex flex-col items-center justify-center px-6 text-center">
+    <section className="bg-black backdrop-blur-xl text-white min-h-screen flex flex-col mt-12 pt-12 items-center justify-center px-6 text-center">
       {/* Logo */}
-      <div className="flex items-center space-x-2">
-        <img src="/logo.png" alt="Whatmore" className="w-8 h-8" />
-        <span className="text-2xl font-bold">Whatmore</span>
+      <div className="flex justify-center items-center">
+        <div className="h-[0.08rem] w-80 bg-gradient-to-r from-pink-200 to-purple-200"></div>
+        <span className="text-xl font-semibold px-4 text-transparent bg-clip-text bg-gradient-to-r from-[#ee7b9d] to-purple-300">
+          CREATE
+        </span>
+
+        <div className="h-[0.08rem] w-80 bg-gradient-to-r from-pink-400 to-purple-400"></div>
+      </div>
+      {/* Headline */}
+      <div className="flex flex-col justify-center items-center w-[65%] leading-12">
+        <h1 className="text-5xl font-bold mt-8">
+          Generate marketing videos{" "}
+          <span className="font-semibold">in a few clicks with</span>{" "}
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ef7fa1] to-purple-300">
+            Studio
+          </span>
+        </h1>
+        <p className="mt-4 text-gray-300">
+          Whatmore fetches all product and brand details and auto-creates
+          product or promotional videos that can be launched in minutes. Minimal
+          effort, high ROAS!
+        </p>
       </div>
 
-      {/* Headline */}
-      <h1 className="text-5xl font-bold mt-6">
-        Generate marketing videos in a few clicks with{" "}
-        <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-400">
-          Studio
-        </span>
-      </h1>
-      <p className="mt-4 text-gray-300 max-w-2xl">
-        Whatmore fetches all product and brand details and auto-creates product
-        or promotional videos that can be launched in minutes. Minimal effort,
-        high ROAS!
-      </p>
-
       {/* Search Bar & CTA */}
-      <div className="mt-6 flex items-center bg-white p-2 rounded-full shadow-lg w-full max-w-lg">
+      <div className="mt-6 flex items-center shadow-lg bg-white p-1 rounded-full w-full max-w-lg">
         <input
           type="text"
           placeholder="Paste your product link here"
-          className="flex-1 px-4 py-2 text-black outline-none rounded-l-full"
+          className="flex-1 px-4 py-1 text-black outline-none rounded-l-full"
         />
-        <button className="bg-gradient-to-r from-purple-400 to-pink-400 text-white px-6 py-2 rounded-full font-bold shadow-md flex">
-          <span>
+        <button className="bg-gradient-to-r  flex items-center justify-center from-[#ef7fa1] to-purple-300 text-white px-6 py-1 rounded-full font-bold shadow-md">
+          <span className="pr-2">
             <svg
-              width="19"
-              height="18"
+              width="17"
+              height="16"
               viewBox="0 0 19 18"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -44,18 +50,43 @@ const BlackSection = () => {
               ></path>
             </svg>
           </span>
-          Start for FREE
+          <span className="text-black text-sm font-semibold p-1">
+            {" "}
+            Start for <span className="font-bold">FREE</span>
+          </span>
         </button>
       </div>
 
       {/*Logo Section */}
       <section className="">
+        <span className="flex justify-center items-center pt-4 underline">
+          <a href="#" className="pr-2 flex justify-center items-center">
+            {" "}
+            Try demo links
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+              >
+                {" "}
+                <path
+                  d="M5.24323 5.59115C5.24323 6.04948 5.61823 6.42448 6.07656 6.42448H12.4016L5.00156 13.8245C4.67656 14.1495 4.67656 14.6745 5.00156 14.9995C5.32656 15.3245 5.85156 15.3245 6.17656 14.9995L13.5766 7.59948V13.9245C13.5766 14.3828 13.9516 14.7578 14.4099 14.7578C14.8682 14.7578 15.2432 14.3828 15.2432 13.9245V5.59115C15.2432 5.13281 14.8682 4.75781 14.4099 4.75781H6.07656C5.61823 4.75781 5.24323 5.13281 5.24323 5.59115Z"
+                  fill="#FC739C"
+                ></path>{" "}
+              </svg>
+            </span>
+          </a>
+        </span>
+
         <div className="logos-cont flex p-2 m-2 ">
-          <a className="cta cta-studio studio-cta_home_create_studio_try_demo try-demo"></a>
           <a
             href="https://shopify.com"
             target="_blank"
             rel="noopener noreferrer"
+            className="px-4"
           >
             <img
               src="https://d1rem61pdixo0z.cloudfront.net/website-cdn/public/img/logos/shopify.svg"
@@ -66,6 +97,7 @@ const BlackSection = () => {
             href="https://amazon.com"
             target="_blank"
             rel="noopener noreferrer"
+            className="px-4"
           >
             <img
               src="https://d1rem61pdixo0z.cloudfront.net/website-cdn/public/img/logos/amazon.svg"
@@ -76,6 +108,7 @@ const BlackSection = () => {
             href="https://myntra.com"
             target="_blank"
             rel="noopener noreferrer"
+            className="px-4"
           >
             <img
               src="https://d1rem61pdixo0z.cloudfront.net/website-cdn/public/img/logos/myntra.svg"
@@ -86,6 +119,7 @@ const BlackSection = () => {
             href="https://flipkart.com"
             target="_blank"
             rel="noopener noreferrer"
+            className="px-4"
           >
             <img
               src="https://d1rem61pdixo0z.cloudfront.net/website-cdn/public/img/logos/flipkart.svg"
@@ -96,12 +130,14 @@ const BlackSection = () => {
             <img
               src="https://d1rem61pdixo0z.cloudfront.net/website-cdn/public/img/logos/etsy.svg"
               alt="Etsy"
+              className="px-4"
             />
           </a>
           <a
             href="https://walmart.com"
             target="_blank"
             rel="noopener noreferrer"
+            className="px-4"
           >
             <img
               src="https://d1rem61pdixo0z.cloudfront.net/website-cdn/public/img/logos/walmart.svg"
@@ -112,6 +148,7 @@ const BlackSection = () => {
             href="https://lazada.com"
             target="_blank"
             rel="noopener noreferrer"
+            className="px-4"
           >
             <img
               src="https://d1rem61pdixo0z.cloudfront.net/website-cdn/public/img/logos/lazada.svg"
@@ -122,6 +159,7 @@ const BlackSection = () => {
             href="https://zazzle.com"
             target="_blank"
             rel="noopener noreferrer"
+            className="px-4"
           >
             <img
               src="https://d1rem61pdixo0z.cloudfront.net/website-cdn/public/img/logos/zazzel.svg"
@@ -133,63 +171,78 @@ const BlackSection = () => {
 
       {/* Social & E-Commerce Icons */}
 
-      <div class="create-images-cont flex flex-row p-5">
+      <div className="create-images-cont flex flex-row p-5 gap-4">
         <img
           src="https://d1rem61pdixo0z.cloudfront.net/website-cdn/public/img/home/static/create-1.webp"
           data-image-component="true"
           alt="For marketers, dropshippers, brands and designers"
           title="For marketers, dropshippers, brands and designers"
-          width="594"
-          height="424"
+          width="440"
+          height="250"
           loading="lazy"
           decoding="async"
-          class="img-1"
+          className="img-1"
         />{" "}
         <img
           src="https://d1rem61pdixo0z.cloudfront.net/website-cdn/public/img/home/static/create-2.webp"
           data-image-component="true"
           alt="6x engagement, 12x ROAS"
           title="6x engagement, 12x ROAS"
-          width="503"
-          height="424"
+          width="420"
+          height="250"
           loading="lazy"
           decoding="async"
-          class="img-2"
+          className="img-2"
         />{" "}
       </div>
 
-      <div>
-        <video
-          class="video-player "
-          src="https://d1rem61pdixo0z.cloudfront.net/website-cdn/public/img/studio/flatlay.webm"
-          poster="https://cdn.sanity.io/images/g4ms2fk8/production/828c23c516e871a3ddd865c4db5034c183055b47-361x400.png"
-          muted=""
-          playsinline=""
-        >
-          Your browser does not support the video tag.
-        </video>
-
-        <video
-          class="video-player "
-          src="https://d1rem61pdixo0z.cloudfront.net/website-cdn/public/img/studio/feature_4.webm"
-          poster="https://cdn.sanity.io/images/g4ms2fk8/production/8f51418a68b23471e769d12353add078fc309f35-361x400.png"
-          muted=""
-          playsinline=""
-        >
-          Your browser does not support the video tag.
-        </video>
-      </div>
-      {/* <div className="mt-6 flex space-x-4">
-        {["shopify", "tiktok", "instagram", "facebook", "amazon", "google"].map(
-          (icon) => (
-            <div
-              key={icon}
-              className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center"
+      {/* <div>
+        <span className="mt-10 mb-10 text-neutral-400 text-center text-4xl leading-[3.5rem] tracking-tight font-semibold">
+          Your favorite tools at your disposal
+        </span>
+        <div className="flex flex-col gap-4">
+          <div className="gap-4 grid grid-cols-2">
+            {" "}
+            <video
+              className="video-player "
+              src="https://d1rem61pdixo0z.cloudfront.net/website-cdn/public/img/studio/flatlay.webm"
+              poster="https://cdn.sanity.io/images/g4ms2fk8/production/828c23c516e871a3ddd865c4db5034c183055b47-361x400.png"
+              muted=""
+              playsinline=""
             >
-              <img src={`/icons/${icon}.svg`} alt={icon} className="w-6 h-6" />
-            </div>
-          )
-        )}
+              Your browser does not support the video tag.
+            </video>
+            <video
+              className="video-player "
+              src="https://d1rem61pdixo0z.cloudfront.net/website-cdn/public/img/studio/feature_3.webm"
+              poster="https://cdn.sanity.io/images/g4ms2fk8/production/3b33f7a064dc76ce062fc233ba7ceaa45a7362e6-361x400.png"
+              muted=""
+              playsinline=""
+            >
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div className="flex gap-4">
+            <video
+              className="video-player "
+              src="https://d1rem61pdixo0z.cloudfront.net/website-cdn/public/img/studio/feature_2_christmas.webm"
+              poster="https://cdn.sanity.io/images/g4ms2fk8/production/6517690351fa86510cc0a9d019bb1d515d8eabaf-361x400.png"
+              muted=""
+              playsinline=""
+            >
+              Your browser does not support the video tag.
+            </video>
+            <video
+              className="video-player "
+              src="https://d1rem61pdixo0z.cloudfront.net/website-cdn/public/img/studio/feature_4.webm"
+              poster="https://cdn.sanity.io/images/g4ms2fk8/production/8f51418a68b23471e769d12353add078fc309f35-361x400.png"
+              muted=""
+              playsinline=""
+            >
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
       </div> */}
     </section>
   );

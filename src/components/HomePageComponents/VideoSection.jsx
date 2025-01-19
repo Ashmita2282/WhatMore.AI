@@ -13,10 +13,11 @@ const VideoSection = () => {
   }, []);
 
   return (
-    <div className=" flex flex-col">
-      <h1 className="w-[90%] text-center text-[56px] font-normal leading-[64px] tracking-[-1.12px]">
+    <div className=" flex flex-col justify-center items-center mt-12">
+      <h1 className="w-[70%] text-center text-[50px] font-normal leading-[64px] tracking-[-1.12px]">
         {" "}
-        Effortless, high-quality videos for any platform with Whatmore Studio
+        Effortless, high-quality videos for any platform with{" "}
+        <span className="font-bold">Whatmore Studio</span>
       </h1>
 
       <div className="flex justify-center md:w-full">
